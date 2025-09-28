@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Inventario CRUD</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+
 </head>
 <body>
     <div class="contenedor">
@@ -24,7 +26,7 @@
 
         <div class="tabla-productos">
             <h2>Inventario Actual</h2>
-            <table>
+            <table id="tablaInventario"> 
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -34,15 +36,17 @@
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody id="listaProductos">
-                    <tr>
-                        <td colspan="5" style="text-align: center;">Cargando productos...</td>
-                    </tr>
-                </tbody>
+                <tbody id="listaProductos"> 
+                    </tbody>
             </table>
         </div>
     </div>
 
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
     <script src="app.js"></script> 
+
+
+</div>
 </body>
 </html>
